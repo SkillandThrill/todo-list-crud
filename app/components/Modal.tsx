@@ -2,25 +2,24 @@ import React from 'react'
 
 interface ModalProps{
     modalOpen : boolean
-    setModalOpen: (open :boolean) => boolean;
+    setModalOpen: (open : boolean) => boolean | void;
+    children: React.ReactNode
 }
 
 
 //  className={`modal ${modalOpen ? "modal-open" : ""}`}
 // onClick={() => setModalOpen(false)}
-const Modal : React.FC<ModalProps> = ({modalOpen, setModalOpen}) => {
+const Modal : React.FC<ModalProps> = ({modalOpen, setModalOpen, children}) => {
   return (
-    <div className='modal modal-open'>
+    <div className={`modal ${modalOpen ? "modal-open" : ""} `}>
         <div className='modal-box relative'>
-            <label className=''>
+            <label
+                className='btn btn-sm btn-circle absolute right-2 top-2'
+                onClick={() => setModalOpen(false)}
+            >
             ✕
             </label>
-            <h3>
-                Congratulation random internet user
-            </h3>
-            <p className='py-4'> 
-                You have been selected for a chance
-            </p>
+            {children}
         </div>
     </div>
   )
