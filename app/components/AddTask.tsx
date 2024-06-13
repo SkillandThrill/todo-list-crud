@@ -1,12 +1,20 @@
-import React from 'react'
+'use client';
+
+import React, { useState } from 'react'
 import { AiOutlinePlus } from 'react-icons/ai'
-
+import Modal from './modal'
 const AddTask = () => {
-  return (
-    <button className='btn btn-primary w-full'>
-        Add New Task <AiOutlinePlus  size={18} className='ml-2'/>
+  const [modalOpen, setModalOpen] = useState<boolean>(false)
 
-    </button>
+  return (
+    <div>
+      <button className='btn btn-primary w-full' onClick={() => setModalOpen(true)}>
+        Add New Task <AiOutlinePlus  size={18} className='ml-2'/>
+      </button>
+
+      <Modal modalOpen={modalOpen} setModalOpen ={setModalOpen} />
+    </div>
+
   )
 }
 
