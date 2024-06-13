@@ -1,5 +1,0 @@
-created the basic structure of the todo-app included thea daisy ui package which enabled to use the visual components for the icons adding the react icons.
-
-added the json server installed the package and created the data folder in which to store the data created the todos.json and after including the port initialized the server..to export the ITask created the types folder in which exports the tasks, id and text through th interface then .. created the async and await function to pass the props into the TodoList component..creating new task component to reduce the code complications.. in  Task component passed the TaskProps to get the data..
-
-created the modal component to add the ui after creating the new task to open and close the modal after entering the data created useState for Opening the modal .. updating the modal .. adding the properties for closing the modal..added the children in the modal to get the data directly from the user..created the form to get the data from the user and add it to the todos
