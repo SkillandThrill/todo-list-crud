@@ -40,7 +40,7 @@ const AddTask = () => {
               onChange={e =>setNewTaskValue(e.target.value)} 
               type="text"
               placeholder="Type here" 
-              className="input input-bordered w-full max-w-full" 
+              className="input input-bordered w-full " 
             />
           </div>
           <button type='submit' className='btn m-2'>Submit</button>

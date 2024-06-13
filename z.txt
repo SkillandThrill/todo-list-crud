@@ -1,0 +1,3 @@
+creating a variable to get the value from the event when the data is added into the form named as handleSubmitNewTodo.. created new api function in the file to create and add new todo.. for the constant refresh of the browser using the react router from next navigation..since we were getting error every time while creating new todo due to the same id so we are using uuid..
+
+to use the icons for edit icon and delete icon for that using the react icons .. to give the working to those icons replicated the same modal and added new functionalities such as openModalEdit, openModalDelete and a useState of taskToEdit a handleSubmitEditTodo as well which will be triggered after clicking on to the icons..created the api call for editing the todo and deleting the todo..
