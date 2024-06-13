@@ -1,0 +1,1 @@
+created the basic structure of the todo-app included thea daisy ui package which enabled to use the visual components for the icons adding the react icons.
